@@ -1,0 +1,25 @@
+<!--Sobre mi -->
+<div class="container-fluid border-bottom border-black" >
+        
+     <!-- Banner -->
+    <div class="pt-2 banner-f">
+        <img class="rounded-5 " src="/assets/img/banner.jpg" class="img-fluid" width="100%" alt="baner">
+    </div>
+    <!-- Avatar -->
+    <div class="avatar-area "><br>
+        <img  src={{persona.img}} w class="img-fluid" alt="mi foto">                                                                             
+    </div>
+    <div class="avatar-datos row">        
+        <div class="datos-personal   col-md-3 col-lg-3 col-xl-2 ">
+            <h2 class="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
+            <h5>{{persona.titulo}}</h5>
+        </div>
+        <div class="sobre-mi col-md-8">
+            <h2>Sobre mi</h2>
+            <p>{{persona.sobreMi}}</p>
+        </div> 
+       <div  class="d-grid gap-2 d-md-flex justify-content-md-end boton boton ">
+            <button class="btn btn-success" type="button" routerLink="/editperfil/1" *ngIf="isLogged">EDITAR PERFIL</button>
+       </div>  
+    </div>
+</div> 

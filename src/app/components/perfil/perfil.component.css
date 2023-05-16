@@ -1,0 +1,46 @@
+/*Sobre mi*/
+.boton{
+    padding-right: 8%;
+}
+
+.avatar-area {
+    padding: 0;
+}
+.avatar-area img {
+    width: 250px;
+    height: 250px;    
+    border: 3px solid white;
+    margin-left: 40px;
+    bottom:150px;
+    border-radius: 100%;    
+    position: relative;
+}
+p {
+    font-size: 20px;
+}
+.avatar-datos {
+    position: relative;
+    bottom: 100px; 
+    padding-left: 60px;    
+}
+.nombre {    
+     
+    padding-bottom: 10px;       
+}
+.datos-personal {
+    padding-left: 40px; 
+}
+.sobre-mi {    
+    margin-left: 25px;
+}
+@media screen and (max-width: 768px){
+    .avatar-area img{        
+        height: 160px;
+        width: 160px;
+    }    
+}
+@media screen and (max-width: 768px){
+    .banner-f {      
+        height: 230px;
+    }    
+}

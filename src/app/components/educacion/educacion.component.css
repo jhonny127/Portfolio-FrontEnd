@@ -1,0 +1,24 @@
+/*Experiencia*/
+.boton {
+    padding-right: 8%;
+}
+.expe-edu {
+    left: 60px;
+    padding-left: 60px;
+    margin: 20px;
+}
+.expe-edu img {
+    background-color: #000000;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+.exp-edu-tex  {  
+    margin-left: 25px;  
+    padding: 5px;    
+}
+p {
+    font-size: 20px;
+}

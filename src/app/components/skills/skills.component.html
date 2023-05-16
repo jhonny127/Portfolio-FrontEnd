@@ -1,0 +1,23 @@
+<!--Habilidades-->
+<div class="container-fluid border-bottom border-black">
+    <h1 class="text-p">Hard & soft skills</h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end boton ">
+        <button type="button" routerLink="/newskills" class="btn btn-primary" *ngIf="isLogged"><i class="bi bi-pencil-square"></i>NUEVA SKILL</button>
+    </div>    
+
+    <div class="barra container" *ngFor="let Skills of skills">
+       
+        <h3 class="tex-h" >{{Skills.nombre}}</h3>
+        <div class="progress"  role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 25px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated "  [style.width.%]="(Skills.porcentaje)">{{Skills.porcentaje}}</div>
+        </div><br>        
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isLogged">
+            <button class="btn btn-success" routerLink="/editskills/{{Skills.id}}">
+                <i class="bi bi-pencil-fill"></i>EDITAR</button>
+            </div><br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(Skills.id)">
+                <i class="bi bi-trash-fill"></i>BORRAR</button>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-sm p-0">
+    <div class="container-fluid ">
+        <div class="navbar-brand p-0">
+            <a><img src="assets/img/APLogo.png" alt="Logo argentina programa" width="120" ></a>
+        </div>            
+        <div class="red-social ">
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary m-3"(click)="login()"*ngIf="!isLogged" >Login</button>
+    <button type="button" class="btn btn-secondary m-3"(click)="onLogOut()"*ngIf="isLogged">Logout</button>
+</nav>
