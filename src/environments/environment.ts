@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '264942611015',
   },
   production: true,
-  URL: 'https://portfoliobackend-jh.onrender.com'
+  URL: 'https://portfoliobackend-jh.onrender.com/'
 }
